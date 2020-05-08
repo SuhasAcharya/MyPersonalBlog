@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Write Review</title>
+    <div class="bg-dark container-fluid col-sm-12 d-flex align-items-center justify-content-center mb-4">
+
+    <h1 class="text-light font-weight-light"> Write Review</h1>
+</div>
+
+
+{% endblock %}
+
+
+{% block body %}
+<div class="container-fluid">
+<div class="col-sm-6 m-auto p-4 bg:white border rounded">
+    <form action="/users/new" method="POST" >
+    <input class="form-control" type="text" placeholder="Name" aria-label="Search" id="name" name="name">
+    <br>
+    <textarea class="form-control" type="text" placeholder="Write Review Here!" aria-label="Search" id="review" name="review"></textarea>
+    <br>
+    <input class="form-control" type="number" min="0" max="10" placeholder="" aria-label="Search" id="rate" name="rate" >
+    <br>
+    <input class="btn btn-success" type="submit"  value="Post">
+
+</form>
+</div>
+</div>
+
+{% endblock %}

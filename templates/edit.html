@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Edit Review</title>
+   <div class="bg-dark container-fluid col-sm-12 d-flex align-items-center justify-content-center mb-4">
+    <h1 class="text-light font-weight-light"> Edit Review</h1>
+   </div>
+{% endblock %}
+
+{% block body %}
+    <div class="container-fluid ">
+        <div class="col-sm-6 m-auto bg-white p-4 border" >
+        <form action="/users/edit/{{ user.id }}" method="POST" >
+            <input class="form-control px-2 m-0" type="text" placeholder="Name" aria-label="Search" id="name" name="name" value="{{ user.name }}"/>
+            <br>
+            <textarea class="form-control px-2 m-0 "  placeholder="Write Review Here!" aria-label="review"  id="review" name="review">{{ user.review }}</textarea>
+            <br>
+            <input class="form-control px-2 m-0" type="number"  min=0 max=10 placeholder="" aria-label="Search" id="rate" name="rate" value="{{ user.rate }}"/>
+            <br>
+            <input class="btn btn-success" type="submit" value="Save">
+        </form>
+        </div>
+    </div>
+
+{%  endblock %}
