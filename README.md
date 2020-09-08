@@ -1,1 +1,1 @@
-This a personal Blog i created using Python Flask,HTML,CSS.
+This a personal Blog i created using Python Flask,HTML,CSS,JavaScript.
