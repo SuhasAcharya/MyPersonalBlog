@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-# MyPersonalBlog
-=======
-# MyBlog
->>>>>>> b1d8038... Flask Blog
+This a personal Blog i created using Python Flask,HTML,CSS.
